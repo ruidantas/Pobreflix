@@ -17,11 +17,11 @@ export function Home() {
 
 
    useEffect(() => {
-    fetch("http://localhost:5173/static/movies.json").then((res)=> res.json()).then(setStateMovie)
+    fetch("https://pobreflix.vercel.app/static/movies.json").then((res)=> res.json()).then(setStateMovie)
 
-    fetch("http://localhost:5173/static/series.json").then((res)=> res.json()).then(setStateSerie)
+    fetch("https://pobreflix.vercel.app/static/series.json").then((res)=> res.json()).then(setStateSerie)
 
-    fetch("http://localhost:5173/static/animes.json").then((res)=> res.json()).then(setStateAnime)
+    fetch("https://pobreflix.vercel.app/static/animes.json").then((res)=> res.json()).then(setStateAnime)
 
   }, []) 
 
