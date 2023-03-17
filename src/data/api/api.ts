@@ -7,7 +7,7 @@ import {
 } from "../types/types";
 import axios from "axios";
 
-axios.defaults.baseURL = "https://pobreflix-new-api-production.up.railway.app/";
+axios.defaults.baseURL = "https://pobreflix-new-api-production.up.railway.app";
 axios.defaults.headers.post["content-type"] = "application/json";
 
 axios.interceptors.request.use(
