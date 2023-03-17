@@ -7,11 +7,11 @@ import {
 } from "../types/types";
 import axios from "axios";
 
-axios.defaults.baseURL = "https://movies-backend-production.up.railway.app";
+axios.defaults.baseURL = "https://pobreflix-new-api-production.up.railway.app/";
 axios.defaults.headers.post["content-type"] = "application/json";
 
 axios.interceptors.request.use(
-  function (config) {
+  function (config) { 
     const token = localStorage.getItem("token");
     if (token) {
       config.headers.Authorization = `Bearer ${token}`;
